@@ -1,5 +1,19 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.3"
-  }
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
+  },
+  "name": "proyek_kk_01",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/css/input.css -o ./public/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
