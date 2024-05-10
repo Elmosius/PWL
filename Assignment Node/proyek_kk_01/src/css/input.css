@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    .sidebar-main {
+        @apply flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100;
+    }
 
-@layer utilities{
+    .sidebar-child{
+        @apply text-gray-300 text-sm flex items-center hover:text-gray-100 before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3
+    }
+}
 
+@layer components{
+    .th-css{
+        @apply text-[12px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md
+    }
+
+    .td-css{
+        @apply py-2 px-4 border-b border-b-gray-50
+    }
 }

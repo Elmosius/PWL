@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../../css/output.css"/>
-    <title>Kartu Keluarga</title>
+    <title>Buat Kartu Keluarga</title>
 </head>
 <body class="text-gray-800 font-inter">
 <!-- Sidebar start-->
@@ -92,7 +92,7 @@
                 <a href="#" class="text-gray-400 hover:text-gray-600 font-medium">Kartu Keluarga</a>
             </li>
             <li class="text-gray-600 mr-2 font-medium">/</li>
-            <li class="text-gray-600 mr-2 font-medium">Lihat Kartu Keluarga</li>
+            <li class="text-gray-600 mr-2 font-medium">Tambah Kartu Keluarga</li>
         </ul>
         <ul class="ml-auto flex items-center">
             <li class="mr-1 dropdown">
@@ -167,39 +167,43 @@
     <!-- content start-->
     <div class="p-6">
         <div class="container">
-            <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-                <div class="flex">
-                    <h3 class="w-full text-3xl font-bold ">Kartu Keluarga</h3>
-                    <a href="#" class="w-1/6 bg-blue-500 text-white  font-medium py-2 px-3 rounded">Buat Kartu Keluarga </a>
+            <div class="w-auto bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
+                <h3 class="text-3xl font-bold ">Buat Kartu Keluarga</h3>
+                <div class="flex ">
+                    <form method="">
+                        <div class="mt-10 grid gap-x-6 gap-y-8 md:grid-cols-2 ">
+                            <div class="sm:col-span-12">
+                                <label for="nomor-kk" class="block text-sm font-medium leading-6 text-gray-900">Nomor
+                                    Kartu Keluarga</label>
+                                <div class="mt-2 py">
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                           class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1
+                                           ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2
+                                           focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 indent-2"
+                                           placeholder="123456">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-12">
+                                <label for="kepala-keluarga" class="block text-sm font-medium leading-6 text-gray-900">Nama
+                                    Kepala Keluarga</label>
+                                <div class="mt-2">
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                           class="block w-full rounded-md border-0 py-1.5 text-gray-900
+                                           shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400
+                                           focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 indent-2"
+                                           placeholder="Udin">
+                                </div>
+                            </div>
+                            <button
+                                    class="flex items-center justify-center gap-x-2 rounded-md border border-slate-600
+                                    bg-blue-500  py-2 px-4 text-slate-300 transition hover:text-white "
+                            >
+                                Buat KK
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div class="flex w-full mt-8">
-                    <table class="w-full min-w-[460px]">
-                        <thead>
-                        <tr>
-                            <th class="th-css">NIK</th>
-                            <th class="th-css">Name</th>
-                            <th class="th-css">Details</th>
-                            <th class="th-css">No.KK - Nama Kepala Keluaga</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="td-css">1</td>
-                            <td class="td-css">Lorem ipsum dolor sit amet.</td>
-                            <td class="td-css">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo,
-                                quidem?
-                            </td>
-                            <td class="td-css">Lorem ipsum.</td>
-                        </tr>
-                        <tr>
-                            <td class="td-css">2</td>
-                            <td class="td-css">Lorem ipsum dolor sit amet.</td>
-                            <td class="td-css">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo,
-                                quidem?
-                            </td>
-                            <td class="td-css">Lorem ipsum.</td>
-                        </tr>
-                    </table>
+                <div class="flex mt-8">
                 </div>
             </div>
         </div>
