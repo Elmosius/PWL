@@ -21,3 +21,12 @@
         @apply py-2 px-4 border-b border-b-gray-50
     }
 }
+
+@layer utilities{
+    @media (min-width: 768px){
+        .main.active{
+            margin-left: 0px;
+            width: 100%;
+        }
+    }
+}
