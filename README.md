@@ -8,7 +8,7 @@ Selamat datang di repositori saya! Di sini, Anda akan menemukan rekap belajar sa
    > ### Demo node
      Di sini untuk nyoba nyoba apa yang dipelajari dari kampus
 
-   > ### Proyek KK
+   > ### Proyek Kartu Keluarga Penduduk
      Di sini tugas proyek pertama memakai Node Js + Tailwind
    
 Terima kasih telah mengunjungi repositori saya!
