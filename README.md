@@ -10,5 +10,8 @@ Selamat datang di repositori saya! Di sini, Anda akan menemukan rekap belajar sa
 
    > ### Proyek Kartu Keluarga Penduduk
      Di sini tugas proyek pertama memakai Node Js + Tailwind
+
+-  [Project UAS](https://github.com/Elmosius/Project-UAS-PWL) (dibuat dalam repository terpisah boleh dilihat-lihat hehe)
+
    
 Terima kasih telah mengunjungi repositori saya!
