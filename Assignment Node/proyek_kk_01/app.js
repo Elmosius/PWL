@@ -1,6 +1,23 @@
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
+const mysql = require('mysql');
+
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'laravel_20232'
+})
+
+connection.connect(function (err){
+    if (err) throw err;
+    connection.query("SELECT * FROM table_name", function(err, result, fields){
+        if (err) throw err;
+        console.log(result);
+        connetction.end();
+    });
+});
 
 let server = http.createServer((req, res) => {
     let q = url.parse(req.url, true);
@@ -12,7 +29,7 @@ let server = http.createServer((req, res) => {
     } else if (pathname.startsWith('/css') || pathname.startsWith('/js')) {
         fileLocation = 'public' + pathname;
     } else {
-        switch (q.query.menu) {
+        switch (qcd) {
             case 'dashboard':
                 fileLocation = 'public/pages/dashboard.html';
                 break;
@@ -48,7 +65,6 @@ let server = http.createServer((req, res) => {
         } else {
             res.writeHead(200, {'Content-Type': 'text/html'});
         }
-
         res.write(data);
         return res.end();
     });
