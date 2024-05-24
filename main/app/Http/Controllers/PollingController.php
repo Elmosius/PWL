@@ -115,7 +115,6 @@ class PollingController extends Controller
      */
     public function update(Request $request, Polling $polling)
     {
-
         $activePolling = Polling::where('is_active', 1)->first();
         if ($activePolling && $activePolling->id_polling != $polling->id_polling) {
             return redirect('/dashboard/make-polling')->with('errors',
