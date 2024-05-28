@@ -8,11 +8,15 @@ Selamat datang di repositori saya! Di sini, Anda akan menemukan rekap belajar sa
    > ### Demo node
      Di sini untuk nyoba nyoba aja
 
-   > ### Proyek Kartu Keluarga Penduduk 01
+   > ### Kartu Keluarga Penduduk 01
      Di sini materi awal menggunakan Nodejs (pengenalan http, fs, path)
 
-    > ### Proyek Kartu Keluarga Penduduk 02
+    > ### Kartu Keluarga Penduduk 02
      Di sini lanjutan materi di kampus dengan Nodejs (Express)
+
+   > ### Kartu Keluarga Penduduk 02
+     Membahas express lanjutan tentang templating + menggunakan Pug
+
 
 -  [Project UAS](https://github.com/Elmosius/Project-UAS-PWL) (dibuat dalam repository terpisah boleh dilihat-lihat hehe)
 
