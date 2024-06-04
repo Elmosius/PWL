@@ -17,6 +17,9 @@ Selamat datang di repositori saya! Di sini, Anda akan menemukan rekap belajar sa
    > ### Kartu Keluarga Penduduk 03
      Membahas express lanjutan tentang templating + menggunakan Pug
 
+   > ### Kartu Keluarga Penduduk 04
+     Membahas controllers, models, menghubungkan ke mysql
+
 
 -  [Project UAS](https://github.com/Elmosius/Project-UAS-PWL) (dibuat dalam repository terpisah boleh dilihat-lihat hehe)
 
