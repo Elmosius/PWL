@@ -1,0 +1,31 @@
+extends ../layouts/master
+block content
+    div.content-header
+        div.container-fluid
+            div.row.mb-2
+                div.col-sm-6
+                    h1.m-0 Kartu Keluarga Page
+                div.col-sm-6
+                    ol.breadcrumb.float-sm-right
+                        li.breadcrumb-item
+                            a(href="#") Home
+                        li.breadcrumb-item.active Starter Page
+    div.content
+        div.container-fluid
+            div.card
+                div.card-header
+                    a.btn.btn-success(role="button", href="/fam-card/create") Add Kartu Keluarga
+                div.card-body
+                   div.table-responsive
+                       table.table.table-striped(id="table-fam-card")
+                           thead
+                                tr
+                                    th Id
+                                    th name
+                                    th Address
+                           tbody
+                                each famCard in familyCards
+                                    tr
+                                        td #{famCard.id}
+                                        td #{famCard.name}
+                                        td #{famCard.address}

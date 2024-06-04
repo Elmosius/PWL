@@ -1,0 +1,27 @@
+extends ../layouts/master
+block content
+    div.content-header
+        div.container-fluid
+            div.row.mb-2
+                div.col-sm-6
+                    h1.m-0 Kartu Keluarga Page
+                div.col-sm-6
+                    ol.breadcrumb.float-sm-right
+                        li.breadcrumb-item
+                            a(href="#") Home
+                        li.breadcrumb-item.active Starter Page
+    div.content
+        div.container-fluid
+            div.card
+                div.card-body
+                    form(method="post", action="/fam-card/store")
+                        div.form-group
+                            label(for="kk-id") Nomor KK
+                            input.form-control(type="text", id="kk-id", name="id", placeholder="3172xxx", maxlength="16", required, autofocus)
+                        div.form-group
+                            label(for="name-id") Nama Kepala Keluarga
+                            input.form-control(type="text", id="name-id", name="name", placeholder="John Doe", required)
+                        div.form-group
+                            label(for="address-id") Alamat
+                            textarea.form-control(id="address-id", name="address", placeholder="Dummy Address 01", maxlength="300", required)
+                        button.btn.btn-primary(type="submit") Submit
